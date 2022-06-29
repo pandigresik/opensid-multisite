@@ -4,7 +4,7 @@ Satu opensid untuk banyak desa
 
 Berikut cara setting sederhana satu aplikasi opensid untuk beberapa desa sekaligus. Disini saya menggunakan OS Ubuntu 20.10, web server apache dan php versi 7.4.9
 
-## langkah - langkahnya sebagai berikut :
+# langkah - langkahnya sebagai berikut :
 
 - buat database untuk masing2 desa,
 - setting koneksi untuk masing2 desa di sites-desa/{nama_desa}/desa/config/database.php
@@ -17,7 +17,6 @@ Berikut cara setting sederhana satu aplikasi opensid untuk beberapa desa sekalig
 - assets/filemanager/dialog.php
 - assets/filemanager/init.php
 - donjo-app/helpers/opensid_helper.php
-- donjo-app/views/setting/setting_form.php
 
 # Versi Opensid
 
