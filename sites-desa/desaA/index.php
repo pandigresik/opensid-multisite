@@ -54,34 +54,34 @@
  */
 define('ENVIRONMENT', $_SERVER['CI_ENV'] ?? 'production');
 /** opensid folder */
-define('OPENSID_FOLDER', 'OpenSID');
+define('OPENSID_FOLDER', '../../OpenSID');
 
 if(!file_exists('system')){
-	symlink('../../'.OPENSID_FOLDER.'/system', 'system');
+	symlink(OPENSID_FOLDER.'/system', 'system');
 }
 
 if(!file_exists('donjo-app')){
-	symlink('../../'.OPENSID_FOLDER.'/donjo-app', 'donjo-app');
+	symlink(OPENSID_FOLDER.'/donjo-app', 'donjo-app');
 }
 
 if(!file_exists('vendor')){
-	symlink('../../'.OPENSID_FOLDER.'/vendor', 'vendor');
+	symlink(OPENSID_FOLDER.'/vendor', 'vendor');
 }
 
 if(!file_exists('assets')){
-	symlink('../../'.OPENSID_FOLDER.'/assets', 'assets');
+	symlink(OPENSID_FOLDER.'/assets', 'assets');
 }
 
 if(!file_exists('securimage')){
-	symlink('../../'.OPENSID_FOLDER.'/securimage', 'securimage');
+	symlink(OPENSID_FOLDER.'/securimage', 'securimage');
 }
 
 if(!file_exists('themes')){
-	symlink('../../'.OPENSID_FOLDER.'/themes', 'themes');
+	symlink(OPENSID_FOLDER.'/themes', 'themes');
 }
 
 if(!file_exists('template-surat')){
-	symlink('../../'.OPENSID_FOLDER.'/template-surat', 'template-surat');
+	symlink(OPENSID_FOLDER.'/template-surat', 'template-surat');
 }
 
 /*
