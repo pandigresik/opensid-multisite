@@ -182,6 +182,13 @@ $view_folder = '';
 
 /**
  *---------------------------------------------------------------
+ * MANDIRI DIRECTORY NAME
+ *---------------------------------------------------------------
+ */
+	$mandiri_folder = 'fmandiri';
+
+/**
+ *---------------------------------------------------------------
  * ADMIN DIRECTORY NAME
  *---------------------------------------------------------------
  */
@@ -341,6 +348,7 @@ define('VIEWPATH', $view_folder . DIRECTORY_SEPARATOR);
  * Custom path
  */
 	define('WEB', $web_folder);
+    define('MANDIRI', $mandiri_folder);
 	define('ADMIN', $admin_folder);
 	define('DESAPATH', $desa_path.DIRECTORY_SEPARATOR);
 
