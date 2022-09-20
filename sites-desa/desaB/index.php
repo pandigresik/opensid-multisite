@@ -56,10 +56,6 @@ define('ENVIRONMENT', $_SERVER['CI_ENV'] ?? 'production');
 /** opensid folder */
 define('OPENSID_FOLDER', '../../OpenSID');
 
-if(!file_exists('system')){
-	symlink(OPENSID_FOLDER.'/system', 'system');
-}
-
 if(!file_exists('donjo-app')){
 	symlink(OPENSID_FOLDER.'/donjo-app', 'donjo-app');
 }
@@ -139,7 +135,7 @@ switch (ENVIRONMENT) {
  * This variable must contain the name of your "system" directory.
  * Set the path if it is not in the same directory as this file.
  */
-    $system_path = 'system';
+	$system_path = 'vendor/codeigniter/framework/system';
 
 /*
  *---------------------------------------------------------------

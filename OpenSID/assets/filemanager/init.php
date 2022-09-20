@@ -6,12 +6,12 @@ define('BASEPATH', dirname(dirname(dirname(__FILE__))));
 define('FCPATH', BASEPATH . $ds);
 define('DESAPATH', dirname(BASEPATH) . $ds . 'sites-desa' . $ds);
 define('APPPATH', BASEPATH . $ds . 'donjo-app' . $ds);
-define('LIBPATH', BASEPATH . "{$ds}system{$ds}libraries{$ds}Session{$ds}");
+define('LIBPATH', BASEPATH . "{$ds}vendor{$ds}libraries{$ds}Session{$ds}");
 define('APP_URL', ($_SERVER['SERVER_PORT'] == 443 ? 'https' : 'http') . "://{$_SERVER['HTTP_HOST']}".str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']));
 
 require_once LIBPATH . 'Session_driver.php';
 require_once LIBPATH . "drivers{$ds}Session_files_driver.php";
-require_once BASEPATH . "{$ds}system{$ds}core{$ds}Common.php";
+require_once BASEPATH . "{$ds}vendor{$ds}core{$ds}Common.php";
 $root_folder = $_SERVER['DOCUMENT_ROOT'];
 $config_desa_path = $root_folder.$ds.'desa'.$ds.'config/config.php';
 require_once $config_desa_path;
